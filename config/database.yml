@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: schedule_clients_development
+  username: Postgres
+  password: Postgres2023
+  host: 172.18.0.2
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +61,9 @@ development:
 test:
   <<: *default
   database: schedule_clients_test
+  username: Postgres
+  password: Postgres2023
+  host: 172.18.0.2
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

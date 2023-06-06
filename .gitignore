@@ -9,7 +9,10 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-/log/
+/log/*
+!/log/.keep
+/log/development.log
+!/log/new_relic_agent.log
 
 # Used by dotenv library to load environment variables.
 # .env

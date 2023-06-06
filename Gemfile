@@ -8,7 +8,6 @@ gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 gem 'bigdecimal', '1.3.5'
 gem 'cpf_cnpj'
 gem 'devise'
-gem 'hotwire-rails'
 gem 'interactor'
 gem 'newrelic_rpm'
 # Use postgresql as the database for Active Record
