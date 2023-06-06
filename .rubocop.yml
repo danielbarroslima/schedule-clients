@@ -1,0 +1,7 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'config/initializers/*'
+    - 'config/environments/*'
+    - 'config/*.rb'
+    - 'bin/bundle'
