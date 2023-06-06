@@ -53,6 +53,6 @@ jobs:
 #       - name: Security audit dependencies
 #         run: bin/bundler-audit --update
       - name: Security audit application code
-        run: brakeman -q -w2
+        uses: standardnotes/breakeman-action@v1.0.0
       - name: Lint Ruby files
         run: rubocop --parallel
