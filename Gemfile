@@ -7,12 +7,12 @@ ruby '3.0.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'bigdecimal', '1.3.5'
+gem 'brakeman'
 gem 'cpf_cnpj'
 gem 'devise'
 gem 'interactor'
 gem 'newrelic_rpm'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
-gem 'brakeman'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 # Use Puma as the app server
