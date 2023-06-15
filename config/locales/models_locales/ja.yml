@@ -1,0 +1,12 @@
+pt-BR:
+  active_record:
+    models:
+      user: 'ユーザー'
+    attributes:
+      user:
+        name: '名前'
+        email: 'Eメール'
+        active: '有効？'
+        type_user: 'ユーザータイプ'
+        updated_at: '更新しました：'
+        created_at: '作成：'
