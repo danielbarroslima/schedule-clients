@@ -5,3 +5,6 @@ AllCops:
     - 'config/environments/*'
     - 'config/*.rb'
     - 'bin/bundle'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/models/*.rb'

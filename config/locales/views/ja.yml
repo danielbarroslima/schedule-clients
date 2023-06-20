@@ -1,0 +1,7 @@
+ja:
+  users:
+    form:
+      fill_in_the_data: 'データを入力します'
+      submit: 'アクセスをリクエストします'
+      first_last_name: '最初と2番目の名前'
+      email_example: 'email@emailCom'

@@ -1,5 +1,6 @@
 # Where the I18n library should search for translation files
-I18n.load_path += Dir["#{Rails.root}/config/locales/models_locales/*.yml"]
+I18n.load_path += Dir["#{Rails.root}/config/locales/models/*.yml"]
+I18n.load_path += Dir["#{Rails.root}/config/locales/views/*.yml"]
 I18n.load_path += Dir["#{Rails.root}/config/locales/devise/*.yml"]
 I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
 

@@ -1,5 +1,10 @@
-pt-BR:
+ja:
   active_record:
+    errors:
+      models:
+        user:
+          attributes:
+            name: ''
     models:
       user: 'ユーザー'
     attributes:

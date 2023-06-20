@@ -1,4 +1,4 @@
-pt-BR:
+en:
   active_record:
     models:
       user: 'User'

@@ -15,37 +15,45 @@ RSpec.describe User do
   end
 
   context 'validations' do
-    context 'invalid email' do
-      let(:user) { build(:user, email: Faker::Name.name) }
-
-      it { expect(user.errors.full_messages).to  eq ['Email is invalid'] }
-    end
-
-    context 'invalid name' do
-      context 'too long' do
-        let(:user) { build(:user, name: Faker::Name.initials(number: 101)) }
-
-        it { expect(user.errors.full_messages).to eq ['Name is too long (maximum is 100 characters)'] }
-      end
-
-      context 'too short' do
-        let(:user) { build(:user, name: Faker::Name.initials(number: 1)) }
-
-        it { expect(user.errors.full_messages).to eq ['Name is too short (minimum is 2 characters)'] }
-      end
-    end
+    let(:language) { I18n.default_locale == :ja }
 
     context 'email blank' do
-      let(:user) { build(:user, email: '') }
+      let(:attr) { language ? 'Email' : 'Email ' }
 
-      it { expect(user.errors.full_messages).to eq ["Email can't be blank", 'Email is invalid'] }
+      context 'blank' do
+        let(:user) { build(:user, email: '') }
+
+        it { expect(user.errors.full_messages.include?("#{attr}#{I18n.t('.errors.messages.blank')}")).to eq true }
+      end
+
+      context 'invalid' do
+        let(:user) { build(:user, email: Faker::Name.name) }
+
+        it { expect(user.errors.full_messages.include?("#{attr}#{I18n.t('.errors.messages.invalid')}")).to eq true }
+      end
     end
 
-    context 'name blank' do
-      let(:user) { build(:user, name: '') }
+    context 'name' do
+      let(:attr) { language ? 'Name' : 'Name ' }
 
-      it do
-        expect(user.errors.full_messages).to eq ["Name can't be blank", 'Name is too short (minimum is 2 characters)']
+      context 'blank' do
+        let(:user) { build(:user, name: '') }
+
+        it { expect(user.errors.full_messages.include?("#{attr}#{I18n.t('.errors.messages.blank')}")).to eq true }
+      end
+
+      context 'invalid' do
+        let(:user) { build(:user, name: 'A') }
+        let(:error) { "#{attr}#{I18n.t('.errors.messages.too_short.other', count: 2)}" }
+
+        it { expect(user.errors.full_messages.include?(error)).to eq true }
+      end
+
+      context 'too long' do
+        let(:user) { build(:user, name: Faker::Name.initials(number: 101)) }
+        let(:error) { "#{attr}#{I18n.t('.errors.messages.too_long.other', count: 100)}" }
+
+        it { expect(user.errors.full_messages.include?(error)).to eq true }
       end
     end
   end
