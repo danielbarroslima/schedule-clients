@@ -18,7 +18,7 @@ module Users
     private
 
     def invalid_email?
-      email_regex_valid = /\A([\w+\-]\.?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+      email_regex_valid = /\A([\w+-]\.?)+@[a-z\d-]+(\.[a-z]+)*\.[a-z]+\z/i
       valid = context.email =~ email_regex_valid
       valid.is_a?(NilClass)
     end
