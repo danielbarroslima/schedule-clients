@@ -1,0 +1,7 @@
+en:
+  users:
+    errors:
+      messages:
+        email_in_use: 'Email already in use'
+        invalid_email: 'Email in invalid format'
+        

@@ -1,0 +1,6 @@
+es:
+  users:
+    errors:
+      messages:
+        email_in_use: 'すでに使用中のメール'
+        invalid_email: '無効な形式で電子メールを送信します'

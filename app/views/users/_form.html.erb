@@ -1,0 +1,13 @@
+<div class='fill-in-the-data'>
+  <%= t('.fill_in_the_data')%>
+</div>
+
+<%= form_for @user, method: :post, html: { class: 'form-user' } do |f|%>
+
+  <%= f.text_field :name, label: false, as: :name, placeholder: t('.first_last_name'), required: true %>
+  <%= f.text_field :email, label: false, as: :email, placeholder: t('.email_example'), required: true %>
+  <%= f.submit t('.submit')%>
+  <% @user.errors.full_messages.each do |msg| %>
+    <li><%= t(msg) %></li>
+  <% end %>
+<% end %>
