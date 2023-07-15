@@ -18,7 +18,7 @@ RSpec.describe User do
     let(:language) { I18n.default_locale == :ja }
 
     context 'email blank' do
-      let(:attr) { language ? 'Email' : 'Email ' }
+      let(:attr) { language ? 'Eメール' : 'E-mail ' }
 
       context 'blank' do
         let(:user) { build(:user, email: '') }
