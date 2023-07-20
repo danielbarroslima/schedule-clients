@@ -5,3 +5,11 @@ AllCops:
     - 'config/environments/*'
     - 'config/*.rb'
     - 'bin/bundle'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/models/*.rb'
+Style/Documentation:
+  Exclude:
+    - 'app/controllers/*'
+    - 'app/models/*'
+    - 'db/migrate/*'

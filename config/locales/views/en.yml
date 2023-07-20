@@ -1,0 +1,7 @@
+en:
+  users:
+    form:
+      fill_in_the_data: 'Fill in the data'
+      submit: 'Request access'
+      first_last_name: 'First and second name'
+      email_example: 'email@emailCom'

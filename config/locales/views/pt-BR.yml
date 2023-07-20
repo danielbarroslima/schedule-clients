@@ -1,0 +1,7 @@
+pt-BR:
+  users:
+    form:
+      fill_in_the_data: 'Preencha os dados'
+      submit: 'Solicitar acesso'
+      first_last_name: 'Primeiro e segundo nome'
+      email_example: 'email@email.com'

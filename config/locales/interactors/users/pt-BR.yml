@@ -1,0 +1,6 @@
+pt-BR:
+  users:
+    errors:
+      messages:
+        email_in_use: 'Email já em uso'
+        invalid_email: 'Email em formato inválido'

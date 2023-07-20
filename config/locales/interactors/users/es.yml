@@ -1,0 +1,6 @@
+es:
+  users:
+    errors:
+      messages:
+        email_in_use: 'Correo electrónico ya en uso'
+        invalid_email: 'Correo electrónico en formato no válido'

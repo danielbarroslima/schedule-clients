@@ -1,0 +1,12 @@
+en:
+  active_record:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        name: 'Name'
+        email: 'email'
+        active: 'Enable?'
+        type_user: 'User type'
+        updated_at: 'Updated:'
+        created_at: 'Created in:'

@@ -1,0 +1,12 @@
+es:
+  active_record:
+    models:
+      user: 'Usuaria'
+    attributes:
+      user:
+        name: 'Nombre'
+        email: 'correo electrónico'
+        active: '¿Permitir?'
+        type_user: 'Tipo de usuario'
+        updated_at: 'Actualizada:'
+        created_at: 'Creado en:'
