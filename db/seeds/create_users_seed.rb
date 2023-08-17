@@ -12,11 +12,9 @@ class CreateUsersSeed
     User.create(users)
   end
 
-  private
-
-  def users_list
+  def self.users_list
     users = []
-    5.times.each do
+    12.times.each do
       users << {
         email: Faker::Internet.email,
         name: Faker::Name.name,
@@ -24,5 +22,7 @@ class CreateUsersSeed
         type_user: [0, 5, 9, 16].sample
       }
     end
+
+    users
   end
 end
