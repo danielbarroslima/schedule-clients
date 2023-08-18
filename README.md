@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version is 3.0.5
 
-* [System dependencies](https://github.com/danielbarroslima/schedule-clients/blob/main/Gemfile) 
+* [System dependencies](https://github.com/danielbarroslima/schedule-clients/blob/main/Gemfile)
 
 * [Configuration](https://github.com/danielbarroslima/schedule-clients/blob/main/Makefile)
 
@@ -22,7 +22,7 @@ Things you may want to cover:
     In terminal digit:
     `docker network ls`
 
-    The return has this network: 
+    The return has this network:
     `schedule-clients_default   bridge    local`
 
     Where folowing this command

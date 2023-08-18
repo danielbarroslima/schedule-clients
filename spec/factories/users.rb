@@ -5,6 +5,6 @@ FactoryBot.define do
     email { Faker::Internet.email }
     name { Faker::Name.name }
     active { false }
-    type_user { 0 }
+    type_user { [0, 5, 9, 16].sample }
   end
 end

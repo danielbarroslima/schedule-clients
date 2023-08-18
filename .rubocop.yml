@@ -12,4 +12,9 @@ Style/Documentation:
   Exclude:
     - 'app/controllers/*'
     - 'app/models/*'
+    - 'app/controllers/api/v1/*'
     - 'db/migrate/*'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/api/v1/requests/*.rb'
+    - 'spec/models/*.rb'

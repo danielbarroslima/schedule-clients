@@ -6,11 +6,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'bigdecimal', '1.3.5'
 gem 'brakeman'
 gem 'cpf_cnpj'
 gem 'devise'
 gem 'interactor'
+gem 'kaminari', '~> 0.17.0'
 gem 'newrelic_rpm'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 gem 'rails-i18n'
@@ -47,7 +47,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'rubocop', require: false
-  gem 'shoulda-matchers', '2.6.1'
+  # gem 'shoulda-matchers', '2.6.1'
 end
 
 group :development do
